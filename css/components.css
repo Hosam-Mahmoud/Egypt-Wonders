@@ -1,0 +1,65 @@
+/* Grid Layouts */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Card Component */
+.card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 1rem 0;
+    font-size: 1.3rem;
+}
+
+.card p {
+    padding: 0 1rem;
+    color: #666;
+    flex-grow: 1;
+}
+
+.card-link {
+    margin: 1rem;
+    align-self: center;
+}
+
+/* Gallery Item Component */
+.gallery-item {
+    text-align: center;
+}
+
+.gallery-item img {
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+.gallery-item p {
+    font-weight: bold;
+    color: var(--primary-color);
+}

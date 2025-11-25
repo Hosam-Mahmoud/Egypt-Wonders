@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عن مصر - Egypt Wonders</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <style>
+        /* General Responsive Styles */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Droid Arabic Kufi', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
+        }
+
+        /* Page Container */
+        .page-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px 40px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+        }
+
+        /* Text Sections Grid */
+        .text-sections {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Two columns on larger screens */
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .text-sections section {
+            background-color: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            border-right: 5px solid #c9302c; /* Accent border */
+        }
+
+        .text-sections h2 {
+            color: #34495e;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .text-sections p {
+            color: #555;
+            margin: 0;
+            line-height: 1.8;
+        }
+
+        /* About Image */
+        .about-image {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+        }
+
+        /* Media Queries for Responsiveness */
+
+        /* Tablets and smaller */
+        @media (max-width: 992px) {
+            .page-container {
+                padding: 20px 30px;
+                margin: 20px auto;
+            }
+            .text-sections {
+                grid-template-columns: 1fr; /* Switch to a single column */
+                gap: 20px;
+            }
+        }
+
+        /* Large phones and smaller */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+                margin-bottom: 30px;
+            }
+            .page-container {
+                padding: 15px 20px;
+                margin: 10px;
+            }
+            .text-sections section {
+                padding: 20px;
+            }
+            .text-sections h2 {
+                font-size: 1.3rem;
+            }
+        }
+
+        /* Small phones */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.9rem;
+            }
+            .text-sections section {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">Egypt Wonders</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="cities.html" class="nav-link">المدن السياحية</a></li>
+                <li class="nav-item"><a href="kings.html" class="nav-link">الملوك</a></li>
+                <li class="nav-item"><a href="museums.html" class="nav-link">المتاحف</a></li>
+                <li class="nav-item"><a href="hotels.html" class="nav-link">الفنادق</a></li>
+                <li class="nav-item"><a href="gallery.html" class="nav-link">معرض الصور</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">عن مصر</a></li>
+                <li class="nav-item"><a href="team.html" class="nav-link">فريق العمل</a></li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="page-container">
+    <h1>عن مصر</h1>
+    <div class="text-sections">
+        <section>
+            <h2>الموقع الجغرافي</h2>
+            <p>مصر هي دولة عابرة للقارات تقع في أقصى الشمال الشرقي لأفريقيا وجنوب غرب آسيا (شبه جزيرة سيناء). يحدها البحر الأبيض المتوسط شمالاً، والبحر الأحمر شرقاً، والسودان جنوباً، وليبيا غرباً، وفلسطين وإسرائيل من الشمال الشرقي.</p>
+        </section>
+        <section>
+            <h2>العاصمة واللغة</h2>
+            <p>القاهرة هي عاصمة مصر وأكبر مدنها. اللغة الرسمية هي اللغة العربية، ويتحدث المصريون اللهجة المصرية التي هي الأكثر شيوعًا وفهمًا في العالم العربي.</p>
+        </section>
+        <section>
+            <h2>العملة</h2>
+            <p>الجنيه المصري (EGP) هو العملة الرسمية لمصر.</p>
+        </section>
+        <section>
+            <h2>نبذة تاريخية</h2>
+            <p>مصر هي واحدة من أقدم الحضارات في العالم، بدأت تاريخها منذ آلاف السنين على ضفاف نهر النيل. اشتهرت بحضارتها الفرعونية العظيمة التي خلدت أسماء الفراعنة والأهرامات والمعابد. مرت مصر بعهود مختلفة، من العصر الروماني إلى العصر الإسلامي، لتصبح اليوم دولة حديثة تلعب دورًا محوريًا في المنطقة.</p>
+        </section>
+    </div>
+    <div class="about-image">
+        <img src="../images/map.webp" alt="خريطة مصر">
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2025 Egypt Wonders. جميع الحقوق محفوظة.</p>
+</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>

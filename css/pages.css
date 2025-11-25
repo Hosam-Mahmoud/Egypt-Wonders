@@ -1,0 +1,141 @@
+/* Page Specific Styles */
+.page-container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.page-container h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.page-container .intro {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 2.5rem auto;
+}
+
+/* Detail Page Styles */
+.detail-main-image {
+    max-width: 500px;
+    margin: 0 auto 2rem auto;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.text-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.text-sections section h2 {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.text-sections p {
+    line-height: 1.8;
+}
+
+/* City Details */
+.places-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.place-item img {
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.place-item h2 {
+    color: var(--secondary-color);
+}
+
+/* Team Page */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.team-member {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-right: 4px solid var(--secondary-color);
+    text-align: center;
+}
+
+.team-member.leader {
+    grid-column: 1 / -1;
+    background-color: var(--primary-color);
+    color: white;
+    border-right-color: var(--accent-color);
+}
+
+.team-member h3 {
+    margin-bottom: 0.5rem;
+}
+
+.team-member p {
+    margin-bottom: 0.5rem;
+}
+
+.team-member strong {
+    color: var(--secondary-color);
+}
+
+.team-member.leader strong {
+    color: var(--accent-color);
+}
+
+/* About Page */
+.about-image {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+/* Blockquote */
+blockquote {
+    background-color: #f9f9f9;
+    border-right: 5px solid var(--secondary-color);
+    margin: 2rem 0;
+    padding: 1rem 1.5rem;
+    font-style: italic;
+    color: #555;
+}
+
+blockquote p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+blockquote cite {
+    display: block;
+    margin-top: 0.5rem;
+    text-align: left;
+    font-weight: bold;
+    color: var(--primary-color);
+}

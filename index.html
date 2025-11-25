@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egypt Wonders - اكتشف جمال مصر</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General Responsive Styles */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Droid Arabic Kufi', sans-serif;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* Hero Section Responsiveness */
+        .hero {
+            /* Assuming a background image is set in style.css */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px; /* Adjusted padding */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #c9302c;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #a02622;
+        }
+
+        /* Explore Section Responsiveness */
+        .explore-section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .explore-section h2 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 40px;
+        }
+
+        .explore-grid {
+            display: grid;
+            /* Creates a responsive grid that fits as many columns as possible */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .explore-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: right; /* Align text to the right for Arabic */
+        }
+
+        .explore-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-image {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card-content {
+            padding: 25px;
+        }
+
+        .card-content h3 {
+            font-size: 1.5rem;
+            color: #34495e;
+            margin: 0 0 10px 0;
+        }
+
+        .card-content p {
+            color: #7f8c8d;
+            margin: 0 0 20px 0;
+        }
+
+        .card-link {
+            color: #c9302c;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .card-link:hover {
+            color: #a02622;
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+        }
+
+        /* Media Queries for smaller screens */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .explore-section h2 {
+                font-size: 2rem;
+            }
+            .explore-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 80px 15px;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .explore-section {
+                padding: 40px 15px;
+            }
+            .explore-section h2 {
+                font-size: 1.8rem;
+            }
+            .explore-grid {
+                grid-template-columns: 1fr; /* Single column on small phones */
+            }
+            .card-image {
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="nav-logo">Egypt Wonders</a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="pages/cities.html" class="nav-link">المدن السياحية</a></li>
+                    <li class="nav-item"><a href="pages/kings.html" class="nav-link">الملوك</a></li>
+                    <li class="nav-item"><a href="pages/museums.html" class="nav-link">المتاحف</a></li>
+                    <li class="nav-item"><a href="pages/hotels.html" class="nav-link">الفنادق</a></li>
+                    <li class="nav-item"><a href="pages/gallery.html" class="nav-link">معرض الصور</a></li>
+                    <li class="nav-item"><a href="pages/about.html" class="nav-link">عن مصر</a></li>
+                    <li class="nav-item"><a href="pages/team.html" class="nav-link">فريق العمل</a></li>
+                </ul>
+                <div class="nav-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>مرحباً بك في أرض الأهرامات</h1>
+                <p>انطلق في رحلة عبر الزمن لاكتشاف عجائب مصر القديمة والحديثة</p>
+                <a href="#explore" class="cta-button">استكشف الآن</a>
+            </div>
+        </section>
+
+        <section id="explore" class="explore-section">
+            <h2>اكتشف عجائب مصر</h2>
+            <div class="explore-grid">
+                <div class="explore-card">
+                    <div class="card-image" style="background-image: url('images/cities/luxor.jpg');"></div>
+                    <div class="card-content">
+                        <h3>المدن السياحية</h3>
+                        <p>من القاهرة الصاخبة إلى أسوان الهادئة</p>
+                        <a href="pages/cities.html" class="card-link">اكتشف المدن</a>
+                    </div>
+                </div>
+                <div class="explore-card">
+                    <div class="card-image" style="background-image: url('images/kings/tut-mask.jpg');"></div>
+                    <div class="card-content">
+                        <h3>ملوك وفراعنة</h3>
+                        <p>تعرف على حياة وأسرار حكام مصر العظماء</p>
+                        <a href="pages/kings.html" class="card-link">اكتشف الملوك</a>
+                    </div>
+                </div>
+                <div class="explore-card">
+                    <div class="card-image" style="background-image: url('images/museums/egyptian-museum-1.jpg');"></div>
+                    <div class="card-content">
+                        <h3>المتاحف</h3>
+                        <p>انغمس في تاريخ مصر من خلال كنوزها</p>
+                        <a href="pages/museums.html" class="card-link">اكتشف المتاحف</a>
+                    </div>
+                </div>
+                <div class="explore-card">
+                    <div class="card-image" style="background-image: url('images/nile/nile5.jpg');"></div>
+                    <div class="card-content">
+                        <h3>نهر النيل</h3>
+                        <p>شريان الحياة الذي أبدع حضارة عظيمة</p>
+                        <a href="pages/nile.html" class="card-link">اكتشف النيل</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Egypt Wonders. جميع الحقوق محفوظة. تصميم وتطوير فريق العمل.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
